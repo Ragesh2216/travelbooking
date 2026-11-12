@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Design Tokens — Meridian Stays
+   Editorial Coastal Luxury Palette & Typography Scale
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --bg-page: #faf8f5;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f2eee7;
+  --bg-muted: #e7e1d6;
+  --bg-dark: #102528;
+  --bg-dark-deep: #0b1b1e;
+
+  /* Ink & Text */
+  --text-primary: #141b22;
+  --text-secondary: #4a5562;
+  --text-muted: #6c7785;
+  --text-inverse: #faf8f5;
+  --text-inverse-muted: rgba(250, 248, 245, 0.78);
+
+  /* Brand Accents */
+  --brand-primary: #0f5257;       /* Deep Aegean Teal */
+  --brand-primary-hover: #0a3c40;
+  --brand-primary-soft: rgba(15, 82, 87, 0.09);
+  --brand-accent: #d96b43;        /* Warm Terracotta */
+  --brand-accent-hover: #c05832;
+  --brand-accent-soft: rgba(217, 107, 67, 0.12);
+  --brand-gold: #c89f54;
+
+  /* Semantic Status Colors */
+  --status-success: #15803d;
+  --status-success-bg: #ecfdf3;
+  --status-warning: #b45309;
+  --status-warning-bg: #fffbeb;
+  --status-error: #b91c1c;
+  --status-error-bg: #fef2f2;
+
+  /* Borders & Dividers */
+  --border-light: rgba(20, 27, 34, 0.09);
+  --border-medium: rgba(20, 27, 34, 0.16);
+  --border-inverse: rgba(255, 255, 255, 0.16);
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Plus Jakarta Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing & Layout */
+  --container-max: 1240px;
+  --container-pad: 24px;
+  --header-height: 76px;
+  --section-pad-y: 88px;
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-xs: 0 2px 8px rgba(16, 37, 40, 0.05);
+  --shadow-sm: 0 8px 24px rgba(16, 37, 40, 0.07);
+  --shadow-md: 0 18px 42px rgba(16, 37, 40, 0.11);
+  --shadow-lg: 0 28px 64px rgba(11, 27, 30, 0.22);
+
+  /* Motion */
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 180ms var(--ease-smooth);
+  --transition-base: 280ms var(--ease-smooth);
+  --transition-slow: 480ms var(--ease-smooth);
+
+  /* Z-index Scale */
+  --z-dropdown: 30;
+  --z-header: 50;
+  --z-drawer: 80;
+  --z-modal: 100;
+  --z-toast: 120;
+}

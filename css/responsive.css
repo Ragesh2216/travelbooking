@@ -1,0 +1,271 @@
+/* ==========================================================================
+   Responsive Breakpoints — Stackly Travel
+   Desktop (<= 1180px), Tablet (<= 960px), Mobile (<= 720px / <= 480px)
+   ========================================================================== */
+
+/* Large Tablet / Small Desktop */
+@media (max-width: 1180px) {
+  .nav-list {
+    gap: 18px;
+  }
+
+  .destinations-grid,
+  .experiences-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hotels-grid,
+  .packages-grid,
+  .journal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+  }
+
+  .search-action {
+    grid-column: 1 / -1;
+  }
+
+  .search-submit-btn {
+    width: 100%;
+  }
+
+  .why-us-layout,
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 960px) {
+  :root {
+    --section-pad-y: 68px;
+  }
+
+  .main-nav,
+  .header-cta {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: inline-flex;
+  }
+
+  .destinations-grid,
+  .experiences-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .toolbar-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offers-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Show 2 testimonials per view on tablet */
+  .testimonial-card {
+    flex: 0 0 calc((100% - 22px) / 2);
+  }
+
+  .newsletter-card {
+    grid-template-columns: 1fr;
+    padding: 36px;
+    gap: 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .estimator-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile Landscape & Large Phones */
+@media (max-width: 720px) {
+  :root {
+    --container-pad: 18px;
+    --section-pad-y: 56px;
+    --header-height: 68px;
+  }
+
+  .brand-logo {
+    height: 30px;
+  }
+
+  .wishlist-label,
+  .active-coupon-pill {
+    display: none;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: calc(var(--header-height) + 28px) 0 44px;
+  }
+
+  .search-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guest-popover {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+  .hero-trust-bar {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+  }
+
+  .trust-divider {
+    display: none;
+  }
+
+  .destinations-grid,
+  .experiences-grid,
+  .hotels-grid,
+  .packages-grid,
+  .steps-grid,
+  .journal-grid,
+  .why-us-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-card {
+    min-height: 300px;
+  }
+
+  .toolbar-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* Show 1 testimonial per view on mobile */
+  .testimonial-card {
+    flex: 0 0 100%;
+  }
+
+  .newsletter-card {
+    padding: 28px 20px;
+    border-radius: var(--radius-lg);
+  }
+
+  .newsletter-input-group {
+    flex-direction: column;
+    border-radius: var(--radius-md);
+    padding: 8px;
+  }
+
+  .newsletter-input {
+    padding: 10px 12px;
+  }
+
+  .newsletter-submit {
+    width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .estimator-modal {
+    padding: 20px 16px;
+  }
+
+  .journal-modal-hero {
+    height: 200px;
+  }
+
+  .journal-modal-body {
+    padding: 20px;
+  }
+
+  .est-dates-row,
+  .est-guests-row {
+    grid-template-columns: 1fr;
+  }
+
+  .error-404-main {
+    padding-top: calc(var(--header-height) + 28px);
+    padding-bottom: 48px;
+  }
+
+  .error-404-card {
+    padding: 32px 20px;
+    border-radius: var(--radius-lg);
+  }
+
+  .error-404-search {
+    flex-direction: column;
+  }
+
+  .error-404-input {
+    flex: none;
+    width: 100%;
+    height: 48px;
+  }
+
+  .error-404-search .btn {
+    width: 100%;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .brand-logo {
+    height: 26px;
+  }
+
+  .brand-sub {
+    display: none;
+  }
+
+  .hotel-pricing-footer,
+  .package-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hotel-pricing-footer .btn,
+  .package-footer .btn,
+  .error-404-actions .btn {
+    width: 100%;
+  }
+
+  .offer-coupon-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .offer-actions {
+    width: 100%;
+  }
+
+  .offer-actions .btn {
+    flex: 1;
+  }
+
+  .faq-question {
+    padding: 16px;
+    font-size: 0.94rem;
+  }
+
+  .faq-answer {
+    padding: 0 16px 16px;
+  }
+}
